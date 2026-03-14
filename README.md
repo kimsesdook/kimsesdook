@@ -9,9 +9,8 @@
 
 <br/>
 
-<!-- 방문자 수 뱃지 -->
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkimsesdook&count_bg=%232E86C1&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-</div>
+<!-- 방문자 수 뱃지 (안정적인 버전) -->
+<img src="https://komarev.com/ghpvc/?username=kimsesdook&color=blue&style=flat-square" alt="Profile views" />
 
 <br/>
 
