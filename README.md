@@ -1,6 +1,3 @@
-<!-- 
-💡 이 코드를 복사해서 본인의 깃허브 계정명과 동일한 이름의 리포지토리(kimsesdook/kimsesdook)의 README.md 파일에 덮어쓰기 하시면 됩니다! 
--->
 
 <div align="center">
 
