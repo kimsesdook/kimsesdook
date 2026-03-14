@@ -1,43 +1,43 @@
 <!-- 
-?뮕 ??肄붾뱶瑜?蹂듭궗?댁꽌 蹂몄씤??源껎뿀釉?怨꾩젙紐낃낵 ?숈씪???대쫫??由ы룷吏?좊━(kimsesdook/kimsesdook)??README.md ?뚯씪????뼱?곌린 ?섏떆硫??⑸땲?? 
+💡 이 코드를 복사해서 본인의 깃허브 계정명과 동일한 이름의 리포지토리(kimsesdook/kimsesdook)의 README.md 파일에 덮어쓰기 하시면 됩니다! 
 -->
 
 <div align="center">
 
-<!-- ??댄? 諛???댄븨 ?④낵 ?좊땲硫붿씠??-->
+<!-- 타이틀 및 타이핑 효과 애니메이션 -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=2E86C1&center=true&vCenter=true&width=435&lines=Hi+there!+%F0%9F%91%8B;I'm+a+Backend+Developer;Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
 
 <br/>
 
-<!-- 媛꾨떒???뚭컻 諭껋? -->
+<!-- 간단한 소개 뱃지 -->
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkimsesdook&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 </div>
 
 <br/>
 
-## ?뫅?랅윊?About Me
+## 👨‍💻 About Me
 
-* ?뙮 **?꾩옱 二쇰젰 遺꾩빞:** Java, Spring Boot 湲곕컲???덉젙?곸씠怨??뺤옣 媛?ν븳 諛깆뿏???쒖뒪??API) 媛쒕컻
-* ?썱截?**二쇱슂 紐⑦넗:** "N+1 臾몄젣 媛숈? ?깅뒫 ??섏쓽 ?먯씤???뚯븙?섍퀬 媛쒖꽑?섎뒗 怨쇱젙??利먭퉩?덈떎."
-* ?뵯 **?꾩옱 ?쒕룞:** **CalmDesk (HR-SaaS)** 踰≪뿏??怨좊룄??諛?**ClassLink ERP** ?꾨줈?앺듃 吏꾪뻾
-* ??**?섏쓽 ?뱀쭠:** 湲곗닠 釉붾줈洹몄? ?몄뀡???숈뒿???댁슜??瑗쇨세??湲곕줉?섍퀬 怨듭쑀?섎ŉ, ?딆엫?놁씠 ?ы듃?대━?ㅻ? ?ㅻ벉???섍컩?덈떎.
-* ?벇 **?곕씫泥?** [?대찓??二쇱냼 ?낅젰] ?뱀? [釉붾줈洹??몄뀡 留곹겕 ?낅젰]
+* 🌱 **현재 주력 분야:** Java, Spring Boot 기반의 안정적이고 확장 가능한 백엔드 시스템(API) 개발
+* 🛠️ **주요 모토:** "N+1 문제 같은 성능 저하의 원인을 파악하고 개선하는 과정을 즐깁니다."
+* 🔭 **현재 활동:** **CalmDesk (HR-SaaS)** 백엔드 고도화 및 **ClassLink ERP** 프로젝트 진행
+* ⚡ **나의 특징:** 기술 블로그와 노션에 학습한 내용을 꼼꼼히 기록하고 공유하며, 끊임없이 포트폴리오를 다듬어 나갑니다.
+* 📫 **연락처:** [이메일 주소 입력] 혹은 [블로그/노션 링크 입력]
 
 <br/>
 
-## ?? Pinned Projects (二쇱슂 ?꾨줈?앺듃)
+## 🚀 Pinned Projects (주요 프로젝트)
 
-?쒓? 李몄뿬?섍퀬 湲곗뿬??二쇱슂 ?꾨줈?앺듃?ㅼ엯?덈떎.
+제가 참여하고 기여한 주요 프로젝트들입니다.
 
-| ?꾨줈?앺듃紐?| ?ㅻ챸 | 湲곗닠 ?ㅽ깮 | 留곹겕 |
+| 프로젝트명 | 설명 | 기술 스택 | 링크 |
 |:---:|:---|:---:|:---:|
-| **CalmDesk (Backend)** | HR-SaaS ?몄궗愿由??쒖뒪??諛깆뿏??(吏곸썝 洹쇳깭 愿由? ?듯솕 湲곕줉 ?? <br> *N+1 ?깅뒫 媛쒖꽑, JPA 荑쇰━ 理쒖쟻?????섑뻾* | Java, Spring Boot, MySQL | [Repo](https://github.com/kimsesdook/CalmdeskBackend) |
-| **CalmDesk (Frontend)** | HR-SaaS ?몄궗愿由??쒖뒪???꾨줎?몄뿏??(JavaScript) | VanillaJS / Vue / React (?섏젙?꾩슂) | [Repo](https://github.com/kimsesdook/CallcalmFrontend) |
-| **ClassLink ERP** | 湲곗뾽??ERP(?꾩궗???먯썝 愿由? ?쒖뒪?????좏뵆由ъ??댁뀡 | Java, JSP/Servlet | [Repo](https://github.com/kimsesdook/ClassLinkErpProject) |
+| **CalmDesk (Backend)** | HR-SaaS 인사관리 시스템 백엔드 (직원 근태 관리, 통화 기록 등) <br> *N+1 성능 개선, JPA 쿼리 최적화 등 수행* | Java, Spring Boot, MySQL | [Repo](https://github.com/kimsesdook/CalmdeskBackend) |
+| **CalmDesk (Frontend)** | HR-SaaS 인사관리 시스템 프론트엔드 (JavaScript) | VanillaJS / Vue / React (수정필요) | [Repo](https://github.com/kimsesdook/CallcalmFrontend) |
+| **ClassLink ERP** | 기업용 ERP(전사적 자원 관리) 시스템 웹 애플리케이션 | Java, JSP/Servlet | [Repo](https://github.com/kimsesdook/ClassLinkErpProject) |
 
 <br/>
 
-## ?썱截?Tech Stack (湲곗닠 ?ㅽ깮)
+## 🛠️ Tech Stack (기술 스택)
 
 ### Backend
 <p>
@@ -49,7 +49,7 @@
 ### Frontend
 <p>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <!-- ?ъ슜?섏떆???꾨줎???꾨젅?꾩썙?ш? ?덈떎硫??꾨옒 二쇱꽍???怨??ъ슜?섏꽭??-->
+  <!-- 사용하시는 프론트 프레임워크가 있다면 아래 주석을 풀고 사용하세요 -->
   <!-- <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"/> -->
   <!-- <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/> -->
 </p>
@@ -69,18 +69,18 @@
 
 <br/>
 
-## ?뱢 GitHub Stats (?섏쓽 ?듦퀎)
+## 📈 GitHub Stats (나의 통계)
 
 <div align="center">
   
   <p>
-    <!-- 源껎뿀釉??꾩껜 Stats & 留롮씠 ?곕뒗 ?몄뼱 (釉붾（???뚮쭏 ?곸슜) -->
+    <!-- 깃허브 전체 Stats & 많이 쓰는 언어 (블루톤 테마 적용) -->
     <img src="https://github-readme-stats.vercel.app/api?username=kimsesdook&show_icons=true&theme=buefy&hide_border=true&title_color=2E86C1" height="150px" alt="stats" />
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kimsesdook&layout=compact&theme=buefy&hide_border=true&title_color=2E86C1" height="150px" alt="top langs" />
   </p>
   
   <p>
-    <!-- ?곗냽 而ㅻ컠(?ㅽ듃由? ?듦퀎 -->
+    <!-- 연속 커밋(스트릭) 통계 -->
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=kimsesdook&theme=buefy&hide_border=true&stroke=0000&title_color=2E86C1" alt="GitHub Streak" />
   </p>
 
@@ -89,5 +89,5 @@
 ---
 
 <div align="center">
-  <i>"?댁젣蹂대떎 ?ㅻ뒛 ???섏? 肄붾뱶瑜??묒꽦?섍린 ?꾪빐 ?몃젰?⑸땲??"</i>
+  <i>"어제보다 오늘 더 나은 코드를 작성하기 위해 노력합니다."</i>
 </div>
