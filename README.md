@@ -5,12 +5,14 @@
 <div align="center">
 
 <!-- 타이틀 및 타이핑 효과 애니메이션 -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=2E86C1&center=true&vCenter=true&width=500&lines=Hi+there!+%F0%9F%91%8B;I'm+Backend+Developer;Building+Scalable+Architecture;Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=2E86C1&center=true&vCenter=true&width=500&lines=Hi+there!+%F0%9F%91%8B;I'm+a+Backend+Developer;Building+Scalable+Architecture;Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
 
 <br/>
 
 <!-- 방문자 수 뱃지 (안정적인 버전) -->
 <img src="https://komarev.com/ghpvc/?username=kimsesdook&color=blue&style=flat-square" alt="Profile views" />
+
+</div>
 
 <br/>
 
