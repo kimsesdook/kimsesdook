@@ -1,6 +1,3 @@
-네, 바로 마크다운 코드로 띄워드리겠습니다! 오른쪽 위에 뜨는 **복사(Copy)** 버튼을 눌러서 깃허브 [README.md](cci:7://file:///c:/%EB%82%B4%EA%BA%BC%ED%8C%8C%EC%9D%B4%EB%84%90/README.md:0:0-0:0)에 그대로 붙여넣기 하시면 됩니다.
-
-```markdown
 <!-- 
 💡 이 코드를 복사해서 본인의 깃허브 계정명과 동일한 이름의 리포지토리(kimsesdook/kimsesdook)의 README.md 파일에 덮어쓰기 하시면 됩니다! 
 -->
@@ -134,4 +131,3 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer&text=Thank%20You%20For%20Visiting!&fontSize=30&fontAlignY=50&descAlignY=61&descAlign=62" width="100%"/>
 </div>
-```
