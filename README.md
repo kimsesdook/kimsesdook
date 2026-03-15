@@ -70,34 +70,36 @@
 
 <br/>
 
-## 🛠️ Tech Stack (Proficiency)
+## 🛠️ Tech Stack
 
-> 💡 ( ) 안 숫자는 5점 만점 기준의 이해도 및 활용 능력을 의미합니다.
+### 🍃 Backend & Data
+<p>
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/> 
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white"/> 
+  <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/> 
+  <img src="https://img.shields.io/badge/JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MyBatis-000000?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JSP%2FServlet-007396?style=for-the-badge&logo=java&logoColor=white"/>
+  <br/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=aws-lambda&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Oracle-F00000?style=for-the-badge&logo=oracle&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+</p>
 
-### 🍃 Backend
-- **Java** (5)
-- **Spring Boot** (5), **Spring** (4)
-- **JPA** (5), **MyBatis** (4)
-- **JSP/Servlet** (4)
-- **Python** (5)
-- **Lambda** (3)
-
-### 🗄️ Database / SQL
-- **SQL** (5)
-- **Oracle** (5)
-- **MySQL** (5)
-
-### 💻 Frontend
-- **HTML/CSS** (3)
-- **React** (3)
-- **JavaScript** (2)
-- **AJAX** (2)
-- **jQuery** (1)
-
-### 🛠️ Besides
-- **Git** (4)
-- **Rest API** (5)
-- **Slack** (4)
+### 💻 Client & Tools
+<p>
+  <img src="https://img.shields.io/badge/HTML5_%26_CSS3-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/AJAX-005571?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
+  <br/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/REST_API-005571?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
+</p>
 
 <br/>
 
