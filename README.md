@@ -1,6 +1,3 @@
-<!-- 
-💡 이 코드를 복사해서 본인의 깃허브 계정명과 동일한 이름의 리포지토리(kimsesdook/kimsesdook)의 README.md 파일에 덮어쓰기 하시면 됩니다! 
--->
 
 <div align="center">
 
@@ -25,8 +22,8 @@
 * 🌱 **Layered Architecture:** Controller-Service-Repository의 책임을 명확하게 분리하여 유지보수성과 테스트 용이성을 극대화합니다.
 * ⚡ **Data Flow Control:** 백엔드에서 캡슐화한 데이터를 DTO로 변환하여 뿌려주고, 이를 클라이언트의 상태 관리(useState, useEffect)와 완벽히 융합시킵니다.
 * 🛡️ **Cross Validation:** 프론트엔드(UX)를 위한 즉각적인 방어와 백엔드(@Valid, DB 단위 검증)를 활용한 이중 보안 검사 체계를 구축합니다.
-* 🔭 **현재 활동:** 직장인 웰빙 관리 HR-SaaS 플랫폼 **`CalmDesk`** 백엔드/프론트엔드 고도화 및 **`ClassLink ERP`** 프로젝트 진행 중
-* 📫 **Contact:** [이메일 주소 입력] 혹은 [노션/블로그 링크 입력]
+* 🔭 **현재 활동:** 직장인 웰빙 관리 HR-SaaS 플랫폼 **`CalmDesk`** 백엔드/프론트엔드 고도화
+* 📫 **Contact:** [kimsesdook@gmail.com] 혹은 [노션/블로그 링크 입력]
 
 <br/>
 
