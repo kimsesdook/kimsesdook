@@ -24,94 +24,87 @@
 
 * 🌱 **Layered Architecture:** Controller-Service-Repository의 책임을 명확하게 분리하여 유지보수성과 테스트 용이성을 극대화합니다.
 * ⚡ **Data Flow Control:** 백엔드에서 캡슐화한 데이터를 DTO로 변환하여 뿌려주고, 이를 클라이언트의 상태 관리(useState, useEffect)와 완벽히 융합시킵니다.
-* 🛡️ **Cross Validation:** 프론트엔드(UX)를 위한 즉각적인 방어와 백엔드(@Valid, DB 중복 체크)를 활용한 이중 보안 검사 체계를 구축합니다.
-* 🔭 **현재 활동:** 직장인 웰빙 관리 HR-SaaS 플랫폼 **`CalmDesk`** 백엔드/프론트엔드 고도화 프로젝트 진행 중
+* 🛡️ **Cross Validation:** 프론트엔드(UX)를 위한 즉각적인 방어와 백엔드(@Valid, DB 단위 검증)를 활용한 이중 보안 검사 체계를 구축합니다.
+* 🔭 **현재 활동:** 직장인 웰빙 관리 HR-SaaS 플랫폼 **`CalmDesk`** 백엔드/프론트엔드 고도화 및 **`ClassLink ERP`** 프로젝트 진행 중
 * 📫 **Contact:** [이메일 주소 입력] 혹은 [노션/블로그 링크 입력]
 
 <br/>
 
 ## 🚀 Pinned Projects & Engineering Experience
 
-제가 시스템 설계부터 풀스택 연동까지 깊게 참여한 핵심 프로젝트입니다.
+제가 시스템 설계부터 풀스택 연동까지 깊게 참여한 핵심 프로젝트와 트러블슈팅 사례입니다.
 
 ### 🏢 CalmDesk (HR-SaaS 웰빙 & 근태 관리 시스템)
-> **마이페이지(프로필 조회 및 수정) 서버 아키텍처 및 RESTful API 구현**
-> * [Backend Repo 바로가기](https://github.com/kimsesdook/CalmdeskBackend) | [Frontend Repo 바로가기](https://github.com/kimsesdook/CallcalmFrontend)
+> **마이페이지 서버 아키텍처 및 자체 욕설 감지 캐시 시스템 구축**
+> * [Backend Repo](https://github.com/kimsesdook/CalmdeskBackend) | [Frontend Repo](https://github.com/kimsesdook/CallcalmFrontend)
 
 <details open>
-<summary><b>👀 핵심 트러블슈팅 및 기술적 고민 (클릭해서 접기/펴기)</b></summary>
+<summary><b>👀 핵심 트러블슈팅 및 기술적 성과 (클릭해서 접기/펴기)</b></summary>
 <br/>
 
-* **JPA N+1 문제 식별 및 쿼리 튜닝**  
-  단순한 회원 데이터 조회 중에 회원이 속한 회사(Company), 부서(Department), 직급(Rank) 데이터를 각각 지연 로딩하면서 서브 쿼리가 폭주하는 N+1 병목을 식별했습니다. 이를 해결하기 위해 `@Query` 내에 `LEFT JOIN FETCH`를 적용하여 단 한 번의 JOIN 쿼리로 연관 엔티티를 모두 즉시 로딩, 성능을 크게 개선했습니다.
-* **DTO 패턴을 통한 보안 및 레이어 분리**  
-  도메인 엔티티(`Member.java`)가 프레젠테이션 계층에 직접 노출되는 것을 차단했습니다. 응답 전용 `ProfileResponse` DTO를 설계하여 클라이언트에 필요한 정보만 전달함은 물론, 현재 포인트 계산이나 날짜 포맷팅 등의 View 로직을 이관하여 유지보수성을 확보했습니다.
-* **React Hooks 기반 안정적인 API 연동**  
-  Axios 인터셉터를 통해 JWT 토큰을 주입하는 구조를 구축했습니다. 또한 프론트엔드에서 `useState`와 `useEffect`를 결합하여 컴포넌트 마운트 시 최초의 데이터를 로드하고, 불필요한 재렌더링을 막기 위한 의존성 배열 주입 구조를 완벽하게 통제했습니다.
-* **프론트엔드-백엔드 계층별 이중 검증(Dual Validation)**  
-  클라이언트 사이드에서 불필요한 서버 호출을 줄이는 필수값 및 비밀번호 로직 검증(1차 방어)을 구현하고, 백엔드 로직에 `@Valid`를 활용한 정규식 체크와 DB 단위(`existsByEmail`)의 2차 중복 체크를 적용하여 백엔드 시스템 보안을 강화했습니다.
-* **일관된 예외 처리 아키텍처 설계**  
-  백엔드에서 발생하는 예외를 `ApiResponse`라는 공통 래퍼 클래스로 일관성 있게 패키징하여 응답합니다. 이를 통해 프론트엔드 클라이언트가 오류 응답 구조를 명확히 예측하고, 사용자에게 직관적인 경고 메시지를 보여줄 수 있는 환경을 마련했습니다.
+* **욕설 감지 시스템 서버 부하 및 외부 의존성 문제 해결**
+  * **Issue**: 기존에 STT 기반 텍스트를 외부 API(Spring AI)에 전송하여 욕설을 판단하던 구조에서 통화 1건당 응답 지연과 비용이 누적되고, AI의 비결정성(결과의 불일치) 문제에 직면했습니다.
+  * **Solve**: 외부 API 통신 대신 DB 기반의 욕설 사전(`profanity_word`) 직접 매칭 방식으로 전면 리팩토링했습니다.
+  * **Result**: DB 부하를 막기 위해 **1분 TTL 인메모리 캐시를 도입**하고, 운영 중 실시간 관리를 위한 `active` 상태 컬럼을 설계했습니다. 획기적인 응답 속도 단축 및 100% 결과의 일관성을 확보했습니다.
+* **JPA N+1 문제 해결 및 쿼리 최적화 (응답속도 1,200ms → 150ms)**
+  * **Issue**: 관리자용 휴가 목록 조회 시 회원, 기업, 부서 엔티티가 지연 로딩(LAZY)되면서 요청 1번에 101회의 조회가 폭주하는 쿼리 병목(N+1)을 확인했습니다.
+  * **Solve**: Spring Data JPA의 `@Query` 내부 `LEFT JOIN FETCH`를 적용하여 단 한 번의 조인 쿼리로 연관 데이터를 즉시 가져오도록 리팩토링했습니다.
+  * **Result**: 불필요한 IO 병목을 완전히 제거하여 API 응답 시간을 평균 **1,200ms에서 150ms로 단축**, 상황에 맞는 유동적 Fetch Join 제어의 중요성을 실감했습니다.
 </details>
 
 <br/>
 
 ### 📊 ClassLink ERP (전사적 자원 관리 웹 애플리케이션)
-> **복잡한 비즈니스 로직의 웹 서비스화**
+> **웹 서비스화 로직 세분화 및 데이터 무결성 확보**
 > * [Repository 바로가기](https://github.com/kimsesdook/ClassLinkErpProject)
 
-<details>
-<summary><b>👀 프로젝트 개요 (클릭해서 펴기)</b></summary>
+<details open>
+<summary><b>👀 핵심 트러블슈팅 및 기술적 성과 (클릭해서 접기/펴기)</b></summary>
 <br/>
 
-* Java, JSP/Servlet을 활용하여 복잡하고 방대한 사내 전사 시스템의 구조를 파악하고, 각 기능별 비즈니스 로직을 효율적이고 유기적인 웹 애플리케이션 기능으로 분리/설계했습니다.
+* **재고 관리 로직 내 동시 승인 시 데이터 음수 무결성 파괴 방어**
+  * **Issue**: 관리자가 여러 개의 기자재 대여를 승인할 때, 잔여 재고보다 많은 대량 요청이 승인되어 재고가 마이너스(-) 숫자로 표기되는 심각한 데이터 정합성 오류를 발견했습니다.
+  * **Solve**: 트랜잭션 도중 상태값만 무작정 업데이트하는 기존 방식에서 탈피하여, `FacilityService` 승인 진입 시퀀스에 **현재 남은 수량(잔여 재고)을 사전 검증하는 선행 방어 로직**을 새롭게 구현했습니다.
+  * **Result**: 재고가 모자란 초과 요청은 곧바로 직관적인 응답 코드(실패: 0 / 성공: 1)로 반환토록 리팩토링하여, 백엔드 데이터의 **100% 무결성을 확보함과 동시**에 클라이언트(프론트엔드)에서 즉각 Alert 메시지를 띄우는 UX 향상을 이끌어 냈습니다.
 </details>
 
 <br/>
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack (Proficiency)
 
-> 실무에 직접 적용하며 사이클과 트러블슈팅을 완벽히 소화해낸 기술들입니다.
+> 💡 ( ) 안 숫자는 5점 만점 기준의 이해도 및 활용 능력을 의미합니다.
 
-### 🍃 Backend & Persistence
-<p>
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"/> 
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white"/> 
-  <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white"/>
-</p>
+### 🍃 Backend
+- **Java** (5)
+- **Spring Boot** (5), **Spring** (4)
+- **JPA** (5), **MyBatis** (4)
+- **JSP/Servlet** (4)
+- **Python** (5)
+- **Lambda** (3)
 
-### 💻 Frontend & API Connect
-<p>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Zustand-764ABC?style=for-the-badge&logo=redux&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-</p>
+### 🗄️ Database / SQL
+- **SQL** (5)
+- **Oracle** (5)
+- **MySQL** (5)
 
-### 🗄️ Database & Environment
-<p>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white"/>
-</p>
+### 💻 Frontend
+- **HTML/CSS** (3)
+- **React** (3)
+- **JavaScript** (2)
+- **AJAX** (2)
+- **jQuery** (1)
+
+### 🛠️ Besides
+- **Git** (4)
+- **Rest API** (5)
+- **Slack** (4)
 
 <br/>
 
 ## 📈 GitHub Stats
 
 <div align="center">
-  
-  <p>
-    <!-- 트로피 애니메이션 추가 -->
-    <a href="https://github.com/ryo-ma/github-profile-trophy">
-      <img src="https://github-profile-trophy.vercel.app/?username=kimsesdook&theme=flat&no-frame=true&no-bg=true&margin-w=15" alt="kimsesdook" />
-    </a>
-  </p>
-
-  <br/>
+  <!-- 이미지 레이아웃이 깨지던 원인인 트로피 뱃지(Broken Link)는 완전히 제거하여 레이아웃을 깔끔하게 복구했습니다. -->
 
   <p>
     <!-- 깃허브 전체 Stats & 많이 쓰는 언어 -->
