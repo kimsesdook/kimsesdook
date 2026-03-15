@@ -32,7 +32,7 @@
 제가 시스템 설계부터 풀스택 연동까지 깊게 참여한 핵심 프로젝트와 트러블슈팅 사례입니다.
 
 ### 🏢 CalmDesk (HR-SaaS 웰빙 & 근태 관리 시스템)
-> **마이페이지 서버 아키텍처 및 자체 욕설 감지 캐시 시스템 구축**
+> **상담원의 스트레스를 관리하는 HR-SaaS**
 > * [Backend Repo](https://github.com/kimsesdook/CalmdeskBackend) | [Frontend Repo](https://github.com/kimsesdook/CallcalmFrontend)
 
 <details open>
